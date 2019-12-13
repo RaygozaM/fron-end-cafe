@@ -79,7 +79,7 @@ window.location.href = "index.html";
 });
 $.ajax({
         type: 'GET',
-        url: 'http://localhost:3000/usuario/0/1000',
+        url: 'https://cafeteria-back-end-180411.herokuapp.com/usuario/0/1000',
         data: $('form').serialize(),
         success: function(resp) {
             $.each(resp.usuarios, function(i, item){
@@ -102,7 +102,7 @@ $.ajax({
 
         $.ajax({
         type: 'POST',
-        url: 'http://localhost:3000/categoria',
+        url: 'https://cafeteria-back-end-180411.herokuapp.com/categoria',
         data: $('form').serialize(),
         success: function(resp) {
             alert("Categoria creada con exito");
